@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
+    
     <!--Head-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
         <title>Tevante Swanston</title>
-        <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
     </head>
 
     <!--Body-->
     <body class="Background">
 
         <!--Navbar-->
+        <!-- Navbar -->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <!-- New section added -->
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
-            <a href="#Github">Github</a>
-            <a href="#Contact">Contact</a>
+            <a href="#GitHub">GitHub</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -26,7 +31,7 @@
         <!--Background video-->
         <div id="Home">
             <video autoplay muted loop id="Typing_Video">
-                <source src="./Codes.mp4" type="video/mp4">
+                <source src="./images/Codes.mp4" type="video/mp4">
                 <!--Display message if video fails to run-->
                 Your browser does not support HML5 video.
             </video>
@@ -48,11 +53,63 @@
             </strong>
         </div>
 
+         <!-- Slideshow section added -->
+         <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Square_Personal_Photo.png" alt="Picture of yourself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Tech.jpg" alt="Replace with a picture of your choosing"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+        </div>
+
         <!--About section-->
         <div class="Row" id="About">
             <!--Left column-->
             <div class="Column_2">
-                <img src="./tech.jpg" alt="Laptop typing">
+                <img src="./images/tech.jpg" alt="Laptop typing">
             </div>
             <!--Right column-->
             <div class="Column_1">
@@ -66,7 +123,7 @@
                 </p>
             </div>
         </div>
-
+  
         <!--GitHub section-->
         <div class="Row" id="GitHub">
             <!--Left column-->
@@ -78,9 +135,9 @@
                     <p class="center"><a href="https://github.com/tevante4" target="_blank">Tevante Swanston's GitHub</a></p>
                 </p>
             </div>
-            <!--Rigjt column-->
+            <!--Right column-->
             <div class="Column_2">
-                <a href="https://github.com/tevante4" target="_blank"><img src="./GitHub.png" alt="GitGub Logo"></a>
+                <a href="https://github.com/tevante4" target="_blank"><img src="./images/GitHub.png" alt="GitGub Logo"></a>
             </div>
         </div>
 
@@ -88,7 +145,7 @@
         <div class="Row" id="Contact">
             <!--Contact image, left column-->
             <div class="Column_2 Column_tall">
-                <img src="./email.jpg" alt="Contact_Image">
+                <img src="./images/email.jpg" alt="Contact_Image">
             </div>
             <!--Contact form, right column-->
             <div class="Column_1 Column_tall">
@@ -113,5 +170,6 @@
                 <br>
             </p>
         </footer>
+        <script src="JS/Portfolio.js"></script>
     </body>
 </html>
