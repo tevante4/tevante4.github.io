@@ -15,4 +15,6 @@ and then users are off playing the classic game. Users can decide which token ea
 to use and the winner is celebrated with music and flashing lights.
 Calculator
 A basic 4 function calculator. Users can add, subtract, multiply, and divide on a sleek web version
-of a calculator.j
+of a calculator.
+
+
