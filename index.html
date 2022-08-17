@@ -21,8 +21,7 @@
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
             <!-- Onclick and ondblclick functions added to open and close the contact form -->
-            <a onclick="openForm()" ondblclick="closeForm()" href="#Contact"
-            class="Contact">Contact</a>
+            <a onclick="openForm()" ondblclick="closeForm()" href="#Contact" class="contact">Contact</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -154,11 +153,11 @@
                 <!--This specifies where and how to send the form data; we are leaving it blank-->
                 <form action="https://formspree.io/f/xayvdzkv" method="POST"> <!--Here we are utilizing a 3rd party service to submit the contact form data-->
                 <label>Name:</label>
-                    <input type="text" placeholder="Please enter your name here">
+                    <input type="text" placeholder="Please enter your name here" required>
                 <label>Email:</label>
-                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <input type="email" id="Email" name="Email" placeholder="Please enter your email here" required> <br>
                 <label>Message:</label>
-                    <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                    <input type="text" id="Message" name="Message" placeholder="Please write your message here" required>
                     <input type="submit" value="SUBMIT">
             </form>
             </div>

@@ -280,18 +280,18 @@ footer {
 /* Fading animation for slideshow */
 .fade {
     animation-name: fade; /* Fade animation is defined below */
-    animation-duration: 1.5s; /* The animation lasts 1.5 seconds */
+    animation-duration: 5.5s; /* The animation lasts 5.5 seconds */
     -webkit-animation-name: fade; /* Same as above for Safari 4.0-8.0 */
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 5.5s;
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4;} /* Image starts transparent */
+    from {opacity: .1;} /* Image starts transparent */
     to {opacity: 1;} /* Image ends opaque */
 }
 
 @keyframes fade {
-    from {opacity: .4;} /* Image starts transparent */
+    from {opacity: .1;} /* Image starts transparent */
     to {opacity: 1;} /* Image ends opaque */
 }
 /***** End Slideshow Styling *****/
