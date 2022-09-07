@@ -22,6 +22,8 @@ A basic 4 function calculator. Users can add, subtract, multiply, and divide on 
 of a calculator.
 
 
+
+----------------------------------------------------------------------------------------------------------------------
 C# Projects
 These are some small projects I made using C# and NET Framework
 Projects:
